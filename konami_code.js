@@ -7,7 +7,7 @@ function init(){
   let index = 0;
   
   function listener(e){
-    const key = parseInt(e.which);
+    const key = parseInt(e.which || e.detail);
     if ( key === code[index] ) {
   	  index++;
   	  if ( index === code.length ) {
